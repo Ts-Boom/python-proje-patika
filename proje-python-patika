@@ -1,0 +1,19 @@
+import math
+
+def euclidean_distance(point1, point2):
+    """
+    İki nokta arasındaki Öklid mesafesini hesaplar.
+
+    :param point1: İlk nokta, tuple (x1, y1)
+    :param point2: İkinci nokta, tuple (x2, y2)
+    :return: Öklid mesafesi
+    """
+    x1, y1 = point1
+    x2, y2 = point2
+    return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+# Örnek kullanım
+nokta1 = (3, 4)
+nokta2 = (0, 0)
+mesafe = euclidean_distance(nokta1, nokta2)
+print("İki nokta arasındaki Öklid mesafesi:", mesafe)
